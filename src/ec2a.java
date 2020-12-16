@@ -26,14 +26,14 @@ public class ec2a {
 
     public static void main(String[] args) {
         // Credentials for AWS Account
-        String aws_access_key_id = "ASIA5CFTBJTKV4CFWZNJ";
-        String aws_secret_access_key = "EmWggJuCq5cZvj+F619ZWI4+FxR5Kxq8vqYIFv5u";
-        String aws_session_token = "FwoGZXIvYXdzEFkaDMC3WgzkwaqtawK4HCK9Acf+n7pAd9yBF+HSBaAS8ys7uaD7thm/XV1NU46H8sLZNH1J8QYVRSpBErmVo2ogk56ZJbmX8XkwnK9MdBzdqQbLTyI7owRZgVSTTIFBRsgeWLwrvWtZsS8OYLT8qt4eb5lVpRkWH1jcPuN5QnXmaoDohStmCVvj5fLS3w8hceLaSIUMX19W8G6YrKgSUbldJ++LpmmO2M8EJUauRiorg/PoCCbVdmnCNXQgqlZkcoQc2O3akG3ho2L/IMRmjSjdnqnzBTItj2qrWNzVeAWhNx+MXsPWDNjqjzleN4PfgupxGR+2lNkmQwCwsSGBeMnByneW";
+        String aws_access_key_id = "KEY ID";
+        String aws_secret_access_key = "YOUR KEY";
+        String aws_session_token = "YOUR TOKEN";
 
         // Define variables
-        String BUCKET_NAME = "njit-cs-643";
-        String QUEUE_NAME = "AniketCCP.fifo";
-        String MESSAGE_GROUP_ID = "njit-cs-643-s3-images";
+        String BUCKET_NAME = "YOUR IMAGES BUCKET";
+        String QUEUE_NAME = "YOUR FIFO QUEUE";
+        String MESSAGE_GROUP_ID = "YOUR QUEUE MESSAGE GROUP";
 
         // Make a connection to the AWS Account
         AWSCredentials credentials = new BasicSessionCredentials(aws_access_key_id, aws_secret_access_key, aws_session_token);
